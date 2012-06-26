@@ -1,7 +1,7 @@
 corpusAnalysis
 ==============
 
-Python module for statistical analysis of transitional probabilities in a musical corpus (designed for harmony, but usable for other structures)
+Python module for form-sensitive transitional probability analysis of harmonic structures in corpora of songs/movements
 
 A sample corpus is available from http://www.github.com/kshaffer/CCLI-2011
 
