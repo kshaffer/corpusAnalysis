@@ -38,4 +38,12 @@ To generate a transitional probability table for all songs in the corpus and wri
 		w.writerow(row)
 	f.close()
 
-That should get you going. More details to be added later. Comments and questions welcome!
+The real power of this module lies in its ability to perform form-sensitive analyses. If a song is encoded with phrase boundaries (single pipes "|") and module boundaries (double pipes "||"), transition tallies and probability profiles can be calculated ignoring chords that cross either or both of those boundaries, using CORPUS.transitionalProbabilityNoPhraseBreaks() or CORPUS.transitionalProbabilityNoModuleBreaks().
+
+CORPUS.transitionalProbabilityWithinModule(moduleName) and CORPUS.transitionalProbabilityWithinModuleNoPhraseBreaks(moduleName) can make calculations within song sections. For example, in a corpus of pop/rock songs, you can run one of these methods for verses, then choruses, then bridges and compare the results.
+
+I trust that the rest of the methods and classes are pretty self explanatory once you understand the ones described here. Happy analyzing! And be sure to check out the CCLI-2011 corpus at github.com/kshaffer, both for something to play around with, and to see an example of the file format.
+
+Though the example corpus uses Roman numerals, any nomenclature can be used, including functional bass, Riemannian functions, figured bass, etc. Just be consistent
+
+Comments and questions welcome at kris.shaffer@gmail.com.
